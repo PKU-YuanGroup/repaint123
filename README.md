@@ -12,7 +12,7 @@
 
 ## 😮 Highlights
 
-Repaint123 generates 3D content with a quality comparable to 2D generation in only ***2 minutes*** from a single image.
+Repaint123 crafts 3D content from a single image, matching 2D generation quality in just ***2 minutes***.
 
 ### 🔥 Simple Gaussian Splatting baseline for image-to-3D
 - Coarse stage: Gaussian Splatting with SDS loss by Zero123 for geometry formation.
