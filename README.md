@@ -3,12 +3,15 @@
 
 <h5 align="center">
 
-[![webpage](https://img.shields.io/badge/Webpage-blue)](https://arxiv.org/abs/2312.13271)
+[![webpage](https://img.shields.io/badge/Webpage-blue)](https://junwuzhang19.github.io/repaint123/)
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.13271-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.13271)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/junwuzhang19/repaint123/blob/main/LICENSE) 
 
 
 </h5>
+
+## [Project page](https://junwuzhang19.github.io/repaint123/) | [Paper](https://arxiv.org/abs/2312.13271) | [Live Demo (Coming Soon)]()
+
 
 <img src="assets/teaser.png"/>
 
