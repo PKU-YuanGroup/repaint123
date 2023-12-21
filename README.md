@@ -15,8 +15,8 @@
 Repaint123 crafts 3D content from a single image, matching 2D generation quality in just ***2 minutes***.
 
 ### 🔥 Simple Gaussian Splatting baseline for image-to-3D
-- Coarse stage: Gaussian Splatting with SDS loss by Zero123 for geometry formation.
-- Fine stage: Mesh with MSE loss by Stable Diffusion for texture refinement.
+- Coarse stage: Gaussian Splatting optimized with SDS loss by Zero123 for geometry formation.
+- Fine stage: Mesh optimized with MSE loss by Stable Diffusion for texture refinement.
 
 ### 💡 View consistency, high quality and fast speed
 - Stable Diffusion for high quality and controllable repainting for reference alignment   -->   view-consistent high-quality image generation.
