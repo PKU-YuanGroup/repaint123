@@ -3,7 +3,7 @@
 
 <h5 align="center">
     
-[![arXiv](https://img.shields.io/badge/Arxiv-2311.10122-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.10122)
+[![arXiv](https://img.shields.io/badge/Arxiv-2312.13271-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.13271)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/junwuzhang19/repaint123/blob/main/LICENSE) 
 
 </h5>
@@ -28,7 +28,7 @@ Repaint123 crafts 3D content from a single image, matching 2D generation quality
 
 Welcome to **watch** 👀 this repository for the latest updates.
 
-✅ **[2023.12.21]** : We have released our paper, Repaint123 on [arXiv](https://github.com/junwuzhang19/repaint123).
+✅ **[2023.12.21]** : We have released our paper, Repaint123 on [arXiv](https://arxiv.org/abs/2312.13271).
 - [ ] [2023.12.21]: Release project page.
 - [ ] Code release.
 - [ ] Online Demo.
