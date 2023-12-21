@@ -19,8 +19,8 @@ Repaint123 generates 3D content with a quality comparable to 2D generation in on
 - Fine stage: Mesh with MSE loss by Stable Diffusion for texture refinement.
 
 ### 💡 View consistency, high quality and fast speed
-- Stable Diffusion for high quality and controllable repainting for reference alignment lead to view-consistent high-quality image generation.
-- View-consistent high-quality images with simple MSE loss leads to fast high-quality 3D content reconstruction.
+- Stable Diffusion for high quality and controllable repainting for reference alignment   -->   view-consistent high-quality image generation.
+- View-consistent high-quality images with simple MSE loss   -->   fast high-quality 3D content reconstruction.
 
 
 
