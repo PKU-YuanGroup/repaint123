@@ -87,7 +87,14 @@
       <div class="row">
         <div class="col-12 text-center">
           <h3>Abstract</h3>
+          <!-- <hr style="width:100%;height:0.7px;background-color:rgba(0, 0, 0, 0.665);margin-top:1em">
+             Create high-fidelity 3D object mesh from a single image in <strong>5 SECONDS</strong>. -->
             <hr style="margin-top:0px">
+            <h6 style="color:#8899a5"> Repaint123 crafts 3D content from a single image, matching 2D generation quality in just <strong>2 minutes</strong>. </h6>
+            
+            <img src="assets/performance.png" alt="performance" width="90%">
+            <br>
+            <br>
             <!-- <h6 style="color:#8899a5"> SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss. </h6> -->
 
               <!-- <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
@@ -122,7 +129,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Method</h3>
+          <h3>Image-to-3D generation pipeline</h3>
             <hr style="margin-top:0px">
             <!-- <h6 style="color:#8899a5"> SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss. </h6> -->
 
@@ -131,9 +138,9 @@
               </video>
 
 			        <br> -->
-          <p class="text-left">
-          <h3>Image-to-3D generation pipeline</h3>
-          </p>
+      
+          <!-- <h3>Image-to-3D generation pipeline</h3> -->
+
           <p class="text-left">
           In the coarse stage, we adopt Gaussian Splatting representation optimized by SDS loss at the novel view. In the fine stage, we export Mesh representation and bidirectionally and progressively sample novel views for controllable progressive repainting. The novel-view refined images will compute MSE loss with the input novel-view image for efficient generation. Cameras in red are bidirectional neighbor cameras for obtaining the visibility map.
         
@@ -144,6 +151,7 @@
           <p class="text-left">
           <h3>Controllable repainting scheme</h3>
         </p>
+            <hr style="margin-top:0px">
           <p class="text-left">
           Our scheme employs DDIM Inversion to generate deterministic noisy latent from coarse images, which are then refined via a diffusion model controlled by depth-guided geometry, reference image semantics, and attention-driven reference texture. We binarize the visibility map into an overlap mask by the timestep-aware binarization operation. Overlap regions are selectively repainted during each denoising step, leading to high-quality novel-view image.
 
@@ -168,9 +176,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>Results</h2>
-            <hr style="margin-top:0px">
             <h3>Comparison</h3>
+            <hr style="margin-top:0px">
             <p>Repaint123 generates high-quality and view-consistent 3D objects from a single unposed image. </p>
 
             <!-- <hr style="margin-top:0px">
@@ -390,6 +397,7 @@
       <div class="row">
         <div class="col-12 text-center">
             <h3>More results</h3>
+            <hr style="margin-top:0px">
             <!-- <p>Repaint123 generates photo-realistic 3D objects from a single unposed image. </p> -->
 
             <!-- <hr style="margin-top:0px">
