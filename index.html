@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html>
+<!-- <head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+ 
+<h1>我的第一个标题</h1>
+ 
+<p>我的第一个段落。</p>
+ 
+</body> -->
+<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SyncDreamer: Generating Multiview-consistent Images from a Single-view Image</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+    <script src="js/google-code-prettify/prettify.js"></script> -->
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Repaint123: Fast and High-quality One Image to 3D Generation <br> with  Progressive Controllable Repainting
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+   <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <!-- <h3>Abstract</h3> -->
+          <!-- <hr style="width:100%;height:0.7px;background-color:rgba(0, 0, 0, 0.665);margin-top:1em">
+             Create high-fidelity 3D object mesh from a single image in <strong>5 SECONDS</strong>. -->
+            <hr style="margin-top:0px">
+            <h6 style="color:#8899a5"> Repaint123 crafts 3D content from a single image, matching 2D generation quality in just <strong>2 minutes</strong>. </h6>
+            
+            <img src="assets/performance.png" alt="performance" width="90%">
+            <br>
+            <br>
+            <!-- <h6 style="color:#8899a5"> SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss. </h6> -->
+
+              <!-- <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                  <source src="video/teaser.mp4" type="video/mp4">
+              </video>
+
+			        <br> -->
+          
+
+        <p class="text-center">
+          <!-- Reverse process of SyncDreamer's multiview diffusion. -->
+          <!-- Overview of Our Repaint123. -->
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+   <!-- abstract -->
+  
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Comparison</h3>
+            <hr style="margin-top:0px">
+            <p>Repaint123 generates high-quality and view-consistent 3D objects from a single unposed image. </p>
+            <p>In order to avoid the impact of lag, we also provide the screenshot <a href="videos/1.mp4">video</a>. </p>
+            <!-- <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/gso.mp4" type="video/mp4">
+            </video>
+          <p class="text-left"> -->
+            
+          </p>
+        </div>
+      </div>
+      <div class="container align-items-center">
+        <div class="row">
+            <!-- Row 0 -->
+            <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    Input
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/cherry_1.png" alt="cherries" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/horse_watercolor_2.png" alt="donuts" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/hum.png" alt="hamburger" class="img-fluid "  >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/horse.png" alt="horse" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+              <img src="videos/reference/dragon_statue_2.png" alt="stone dragon statue" class="img-fluid " >
+          </div>
+          <!-- <div class="col-sm-2">
+              <img src="videos/reference/horse_watercolor_2.png" alt="watercolor horse" class="img-fluid " >
+          </div> -->
+        </div>
+        
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <a href="https://github.com/cvlab-columbia/zero123">Zero123-XL</a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Zero123-XL/cherries.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Zero123-XL/horse_watercolor.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Zero123-XL/hamburger.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Zero123-XL/horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Zero123-XL/stone_dragon.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <!-- <div class="col-sm-2">
+              <video src="videos/Zero123-XL/teapot.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div> -->
+        </div>
+
+
+        <div class="row">
+            <!-- Row 2 -->
+            <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <a href="https://github.com/guochengqian/Magic123">Magic123</a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Magic123/cherries.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Magic123/horse_watercolor.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Magic123/hamburger.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Magic123/horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Magic123/stone_dragon_statue.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <!-- <div class="col-sm-2">
+              <video src="videos/Magic123/teapot.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div> -->
+        </div>
+
+        <div class="row">
+            <!-- Row 3 -->
+            <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <a href="https://github.com/dreamgaussian/dreamgaussian">Dream<br>gaussian</a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Dreamgaussian/cherry_1.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Dreamgaussian/horse_watercolor_2.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Dreamgaussian/hamburger.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Dreamgaussian/horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Dreamgaussian/stone_dragon_statue_2.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <!-- <div class="col-sm-2">
+              <video src="videos/Dreamgaussian/teapot.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div> -->
+        </div>
+
+      
+
+        <div class="row">
+            <!-- Row 4 -->
+            <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <b>Repaint123</b><br>
+                    <b>(GS)</b>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/cherry_1.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/horse_watercolor_2.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/hamburger.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Repaint123-Gaussian_Splatting/stone_dragon_statue_2.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <!-- <div class="col-sm-2">
+              <video src="videos/repaint123/teapot.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div> -->
+        </div>
+        <div class="row">
+          <!-- Row 4 -->
+          <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+              <div class="method-title">
+                  <b>Repaint123</b><br>
+                  <b>(NeRF)</b>
+              </div>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/repaint123_nerf/cherries.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/repaint123_nerf/watercolor_horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/repaint123_nerf/hamburger.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/repaint123_nerf/horse.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+            <video src="videos/repaint123_nerf/stone_dragon_statue.mp4" autoplay loop playsinline muted type="video/mp4"
+                style="width: 100%; height: auto;"></video>
+        </div>
+        <!-- <div class="col-sm-2">
+            <video src="videos/repaint123/teapot.mp4" autoplay loop playsinline muted type="video/mp4"
+                style="width: 100%; height: auto;"></video>
+        </div> -->
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <br>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>More results</h3>
+            <hr style="margin-top:0px">
+	    <p>In order to avoid the impact of lag, we also provide the screenshot <a href="videos/2.mp4">video</a>. </p>
+            <!-- <p>Repaint123 generates photo-realistic 3D objects from a single unposed image. </p> -->
+
+            <!-- <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/gso.mp4" type="video/mp4">
+            </video>
+          <p class="text-left"> -->
+            
+          </p>
+        </div>
+      </div>
+      <div class="container align-items-center">
+        <div class="row">
+            <!-- Row 0 -->
+            <!-- <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    Input
+                </div>
+            </div> -->
+            <div class="col-sm-2">
+                <img src="videos/reference/bird_sparrow_rgba.png" alt="cherries" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/dragon_statue_1.png" alt="donuts" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/dtu-8_rgba.png" alt="hamburger" class="img-fluid "  >
+            </div>
+            <div class="col-sm-2">
+                <img src="videos/reference/eagle_rgba.png" alt="horse" class="img-fluid " >
+            </div>
+            <div class="col-sm-2">
+              <img src="videos/reference/goose-gold_rgba.png" alt="stone dragon statue" class="img-fluid " >
+          </div>
+          <div class="col-sm-2">
+            <img src="videos/reference/Hilary_rgba.png" alt="stone dragon statue" class="img-fluid " >
+        </div>
+          <!-- <div class="col-sm-2">
+              <img src="videos/data/horse_watercolor_2.png" alt="watercolor horse" class="img-fluid " >
+          </div> -->
+        </div>
+
+        
+        <!-- <div class="col-sm-2">
+            <img src="videos/data/horse_watercolor_2.png" alt="watercolor horse" class="img-fluid " >
+        </div> -->
+      </div>
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <a href="https://github.com/cvlab-columbia/zero123">Zero123-XL</a>
+                </div>
+            </div> -->
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/sparrow.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/dragon.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/dtu-8.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/eagle.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Repaint123-Gaussian_Splatting/goose-gold.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/Repaint123-Gaussian_Splatting/Hilary.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Row 0 -->
+          <!-- <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+              <div class="method-title">
+                  Input
+              </div>
+          </div> -->
+          <div class="col-sm-2">
+              <img src="videos/reference/donut_1.png" alt="cherries" class="img-fluid " >
+          </div>
+          <div class="col-sm-2">
+              <img src="videos/reference/anya_rgba.png" alt="donuts" class="img-fluid " >
+          </div>
+          <div class="col-sm-2">
+              <img src="videos/reference/icecream2_rgba.png" alt="hamburger" class="img-fluid "  >
+          </div>
+          <div class="col-sm-2">
+              <img src="videos/reference/mouse-bust-2_rgba.png" alt="horse" class="img-fluid " >
+          </div>
+          <div class="col-sm-2">
+            <img src="videos/reference/sydney_rgba.png" alt="stone dragon statue" class="img-fluid " >
+        </div>
+        <div class="col-sm-2">
+          <img src="videos/reference/croissant_rgba.png" alt="stone dragon statue" class="img-fluid " >
+      </div>
+        <!-- <div class="col-sm-2">
+            <img src="videos/data/horse_watercolor_2.png" alt="watercolor horse" class="img-fluid " >
+        </div> -->
+      </div>
+        <div class="row">
+            <!-- Row 2 -->
+            <!-- <div class="col-sm-1 d-flex align-items-center justify-content-start p-0">
+                <div class="method-title">
+                    <a href="https://github.com/guochengqian/Magic123">Magic123</a>
+                </div>
+            </div> -->
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/donuts.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/nya.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/icecream2.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+                <video src="videos/Repaint123-Gaussian_Splatting/mouse-bust-2.mp4" autoplay loop playsinline muted type="video/mp4"
+                    style="width: 100%; height: auto;"></video>
+            </div>
+            <div class="col-sm-2">
+              <video src="videos/Repaint123-Gaussian_Splatting/sydney.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+          <div class="col-sm-2">
+              <video src="videos/Repaint123-Gaussian_Splatting/croissant.mp4" autoplay loop playsinline muted type="video/mp4"
+                  style="width: 100%; height: auto;"></video>
+          </div>
+        </div>
+
+        
+    </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>Text to image to 3D model</h2>
+            <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/t2i.mp4" type="video/mp4">
+            </video>
+
+          <p class="text-left">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+  
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>2D design to 3D model</h2>
+            <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/drawings.mp4" type="video/mp4">
+            </video>
+
+          <p class="text-center">
+              SyncDreamer enables generating 3D models from 2D designs and hand drawings including skectches, Chinese ink paintings, oil paintings and so on.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+  
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>Multiple instance generation</h2>
+            <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/multiple.mp4" type="video/mp4">
+            </video>
+
+          <p class="text-center">
+            Given the same single-view image, SynDreame allows generating different instances using different random seeds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+
+
+
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
