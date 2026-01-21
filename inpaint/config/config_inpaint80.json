@@ -1,0 +1,23 @@
+{
+    "negative_prompt": "defocused, bad, deformed, ugly, bad anotomy",
+    "guidance_scale": 7.5,
+    "num_inference_steps": 50,
+    "inpainting_strength": 1,
+    "mask_rgb": 0,
+    "mask_blend": 4,
+    "fov": 40,
+    "znear": 0.1,
+    "zfar": 1000,
+    "erode_kernel": 3,
+    "inc_limit": 100,
+    "angle_inc": 80,
+    "normal_thresh": 0.3,
+    "normal_mask_val": 0.8,
+    "swap_face": false,
+    "mask_blend_kernel": 8,
+    "rgb_blend_kernel": -1,
+    "latent_blend_kernel": -1,
+    "backward_render": true,
+    "add_samples": 99,
+    "input_img_path": ""
+}

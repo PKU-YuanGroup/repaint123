@@ -1,0 +1,1 @@
+python test_generate_images.py --dir datasets/alpha --dataset alpha --out logs_alpha_ours_rmedge_soft3_1loss_ip2_masa_resize --gpu 7
