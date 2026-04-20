@@ -1,4 +1,4 @@
-<h2 align="center"> <a href="https://github.com/PKU-YuanGroup/repaint123">Repaint123: Fast and High-quality One Image to 3D Generation with Progressive Controllable 2D Repainting (ECCV2024)</a></h2>
+<h2 align="center"> <a href="https://github.com/PKU-YuanGroup/repaint123">Repaint123: Fast and High-quality One Image to 3D Generation with Progressive Controllable 2D Repainting(ECCV2024)</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
 <h5 align="center">
