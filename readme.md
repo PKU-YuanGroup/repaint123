@@ -10,7 +10,7 @@
 
 </h5>
 
-## [Project page](https://PKU-YuanGroup.github.io/repaint123/) | [Paper](https://arxiv.org/abs/2312.13271) | [Live Demo (Coming Soon)]()
+## [Project page](https://PKU-YuanGroup.github.io/repaint123/) | [Paper](https://arxiv.org/abs/2312.13271) 
 
 
 <img src="assets/teaser.png"/>
